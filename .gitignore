@@ -1,0 +1,4 @@
+study_planner.db
+study_report.txt
+__pycache__/
+*.pyc
