@@ -47,8 +47,21 @@ Clone the GitHub repository:
 
 ```bash
 git clone <YOUR-GITHUB-REPOSITORY-URL>
+```
 
-##  Instructions for Testing
+Open the project folder in Visual Studio Code.
+
+### Run the Project
+
+Open the terminal in the project folder and run:
+
+```bash
+python main.py
+```
+
+The Smart Study Planner menu will appear.
+
+### Testing
 
 The project includes automated tests using Python's `unittest` framework.
 
@@ -56,3 +69,10 @@ Open the terminal in the project folder and run:
 
 ```bash
 python -m unittest discover -s tests -v
+```
+
+A successful test run should end with:
+
+```text
+OK
+```
