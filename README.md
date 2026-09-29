@@ -2,123 +2,57 @@
 
 ## 1. Project Overview
 
-Smart Study Planner is a Python-based study management application designed to help students organize their subjects, assignments, study sessions, and academic progress.
+Smart Study Planner is a Python-based application designed to help students organize their academic activities.
 
-The application uses Python, SQLite, and a modular software structure.
+The application allows students to manage subjects, create and track tasks, record study sessions, monitor progress, and generate study reports.
 
----
+The project uses Python and SQLite and follows a modular structure with separate files for different functionalities.
 
-## 2. Problem Statement
+## 2. Features
 
-Students often have multiple subjects, assignments, deadlines, and study sessions to manage.
-
-Without a proper planning system, it can become difficult to keep track of pending work and study time.
-
-The Smart Study Planner provides a simple system for managing academic activities in one place.
-
----
-
-## 3. Objectives
-
-The main objectives of the project are:
-
-- Manage subjects.
-- Manage assignments and tasks.
-- Store task deadlines and priorities.
+- Add, view, and delete subjects.
+- Add, view, complete, and delete tasks.
+- Set task deadlines and priorities.
 - Record study sessions.
-- Track completed and pending tasks.
-- Calculate study progress.
-- Generate progress reports.
-- Store information permanently using SQLite.
-- Validate user input and handle errors.
+- View study sessions.
+- Track total, completed, and pending tasks.
+- Calculate task completion percentage.
+- Track total study time.
+- Generate and save study reports.
+- Validate user inputs.
+- Automated unit testing.
 
----
+## 3. Technologies / Tools Used
 
-## 4. Main Features
+- **Python** – Application development
+- **SQLite** – Database management
+- **Python unittest** – Automated testing
+- **Git** – Version control
+- **GitHub** – Source code repository
+- **Visual Studio Code** – Development environment
 
-### Subject Management
+No external Python packages are required.
 
-Users can:
+## 4. Steps to Install & Run the Project
 
-- Add subjects.
-- View subjects.
-- Delete subjects.
+### Requirements
 
-### Task Management
+- Python 3.x
+- Git
+- Visual Studio Code
 
-Users can:
+### Installation
 
-- Add tasks.
-- View tasks.
-- Set deadlines.
-- Set task priority.
-- Mark tasks as completed.
-- Delete tasks.
+Clone the GitHub repository:
 
-### Study Schedule
+```bash
+git clone <YOUR-GITHUB-REPOSITORY-URL>
 
-Users can:
+##  Instructions for Testing
 
-- Add study sessions.
-- Record study dates.
-- Record study duration.
-- View previous study sessions.
+The project includes automated tests using Python's `unittest` framework.
 
-### Progress Tracking
+Open the terminal in the project folder and run:
 
-The application calculates:
-
-- Total tasks.
-- Completed tasks.
-- Pending tasks.
-- Task completion percentage.
-- Total study time.
-
-### Reports
-
-Users can:
-
-- Generate a progress report.
-- Save the report as a text file.
-
-### Validation
-
-The application validates:
-
-- Empty text.
-- Dates.
-- Task priorities.
-- Study duration.
-- IDs.
-
----
-
-## 5. Technologies Used
-
-- Python
-- SQLite
-- Tkinter can be added for the GUI version
-- unittest
-- Git and GitHub
-
-The current version uses a command-line interface.
-
----
-
-## 6. Project Structure
-
-```text
-Study Planner project/
-│
-├── main.py
-├── database.py
-├── subjects.py
-├── tasks.py
-├── schedule.py
-├── progress.py
-├── reports.py
-├── validation.py
-├── README.md
-│
-└── tests/
-    └── test_planner.py
+```bash
+python -m unittest discover -s tests -v
